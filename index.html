@@ -1,0 +1,324 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vimal — Portfolio</title>
+    <link rel="icon" type="image/png" href="./assests/client1.jpg" class="icon">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+  
+  </style>
+</head>
+<body class=" text-white antialiased">
+
+  <!-- NAV -->
+  <header class="fixed w-full z-50 top-0">
+    <nav class="nav-glass px-6 md:px-12 py-4 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold tracking-wide" id="brand">Vimal</a>
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a class="nav-link " href="#home">Home</a></li>
+        <li><a class="nav-link " href="#about">About</a></li>
+        <li><a class="nav-link " href="#skills">Skills</a></li>
+        <li><a class="nav-link " href="#projects">Projects</a></li>
+        <li><a class="nav-link " href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- mobile menu toggle -->
+      <div class="md:hidden">
+        <button id="menuBtn" aria-label="menu" class="p-2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white"><path d="M3 6h18M3 12h18M3 18h18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- mobile nav -->
+    <div id="mobileMenu" class="hidden bg-black/80 px-6 pb-6">
+      <ul class="flex flex-col gap-4 pt-4">
+        <li><a class="nav-link block" href="#home">Home</a></li>
+        <li><a class="nav-link block" href="#about">About</a></li>
+        <li><a class="nav-link block" href="#skills">Skills</a></li>
+        <li><a class="nav-link block" href="#projects">Projects</a></li>
+        <li><a class="nav-link block" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="pt-20 ">
+
+    <!-- HOME / HERO -->
+    <section id="home" class="min-h-screen flex items-center px-6 md:px-20 w-full">
+      <div class="max-w-xxl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6">
+          <h1 class="text-5xl md:text-6xl font-extrabold " style="font-weight: 700;">Hi! I'm <span class="text-white">Vimal</span></h1>
+          <h2 class="text-2xl md:text-3xl text-white/80"> <span id="text-red">Front-end Developer</span> <br>building responsive, user-friendly websites.</h2>
+          <p class="text-lg text-white/60 max-w-xl">I specialize in modern HTML, CSS, JavaScript and frameworks. I love turning designs into high-quality web experiences that are fast and accessible.</p>
+          <div class="flex gap-4 items-center">
+            <a href="#contact" class="inline-flex items-center gap-3 px-5 py-3 rounded-full border-2 border-green-500 hover:bg-green-500 hover:text-black transition">
+              <span>Get in touch</span>
+            </a>
+            <a href="#projects" class="text-white/70 hover:underline">See projects →</a>
+          </div>
+        </div>
+
+        <div class="flex justify-center md:justify-end">
+          <img src="./assests/software-developer-6521720.jpg" alt="Profile" class="w-full  md:w-full md:h-90 rounded-3xl object-cover shadow-2xl" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="min-h-[60vh] px-6 md:px-20 ">
+      <div class="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <div class="reveal" data-reveal>
+          <img src="./assests/hd-iphone-wallpaper-8431262_1920.jpg" alt="Profile" class=" iphone-wallpaper rounded-3xl object-cover shadow-2xl" />
+        </div>
+        <div class="reveal" data-reveal>
+          <h3 class="text-4xl font-bold mb-4">About <span style="color:var(--accent)">Me</span></h3>
+          <p class="text-white/70 leading-relaxed mb-4 text-justify">
+            I’m <strong>Vimal</strong>, a front-end developer focused on creating beautiful and
+            accessible user interfaces. I enjoy crafting responsive layouts, optimizing performance,
+            and bringing pixel-perfect designs to life.
+          </p>
+          <p class="text-white/70 leading-relaxed text-justify">
+            Tools & tech I use: HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, Git. I also enjoy UI design, prototyping and learning new frontend tools.
+          </p>
+           <p class="text-white/70 leading-relaxed text-justify" >
+        I specialize in building responsive, user-friendly, and dynamic websites that blend great design with smooth functionality. 
+        With a strong foundation in web technologies like HTML, CSS, JavaScript, Bootstrap, and design tools like Canva, 
+        I love turning ideas into interactive digital experiences.
+      </p>
+      <p class="text-white/70 leading-relaxed text-justify">
+        Whether it's designing sleek interfaces or writing clean, efficient code, I’m passionate about crafting solutions 
+        that are both visually appealing and technically sound. I’m constantly exploring new tools and trends in the front-end 
+        world to stay sharp and innovative.
+      </p>
+      <p class="text-white/70 leading-relaxed text-justify">
+        Curious by nature and committed to growth, I’m always ready to take on new challenges and continue evolving as a developer.
+      </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS (FULL HEIGHT) -->
+    <section id="skills" class="  ">
+      <div class=" ">
+        <div class="mb-10">
+          <h2 class="text-5xl font-bold " style="position: static; ">Skills</h2>
+          <p class="text-white/60 mt-2 max-w-2xl">My core skills and areas of expertise. Hover the cards for a quick highlight.</p>
+        </div>
+
+        <!-- container that looks like full-width dark band -->
+        <div class="w-full bg-[#080808] rounded-xl p-8 skill-card">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="p-6 skill-card-inner reveal skils-box" data-reveal>
+              <div class="flex items-center gap-4 mb-4 ">
+                <div class="icon-circle" style="border:2px solid rgba(0,230,118,0.12)">
+                  <!-- code icon -->
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 18l6-6-6-6" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6L2 12l6 6" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h4 class="text-lg font-semibold text-white">Frontend Development</h4>
+              </div>
+              <p class="text-white/60">React, HTML5, CSS3, JavaScript, Tailwind CSS, Bootstrap css.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="p-6 skill-card-inner reveal skils-box" data-reveal>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="icon-circle" style="border:2px solid rgba(0,230,118,0.12)">
+                  <!-- server icon -->
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="6" rx="2" stroke="var(--accent)" stroke-width="1.6"/><rect x="3" y="14" width="18" height="6" rx="2" stroke="var(--accent)" stroke-width="1.6"/></svg>
+                </div>
+                <h4 class="text-lg font-semibold text-white">Graphic Designer</h4>
+              </div>
+              <p class="text-white/60"> Canva, Photoshop, Color Theory, PicsArt, Etc...</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="p-6 skill-card-inner reveal skils-box" data-reveal>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="icon-circle" style="border:2px solid rgba(0,230,118,0.12)">
+                  <!-- brush icon -->
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 21s4-1 6-3 5-5 7-7 3-4 3-4 0 3-4 7-6 7-8 8S3 21 3 21z" stroke="var(--accent)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h4 class="text-lg font-semibold text-white">UI / UX Design</h4>
+              </div>
+              <p class="text-white/60">Figma, Adobe XD, Prototyping, User Testing.</p>
+            </div>
+          </div>
+        </div>
+        <div id="projects"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="project">
+      <div class="max-w-6xl mx-auto w-full ">
+        <h2 class="text-4xl font-bold mb-6">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+
+          <article class="bg-[#0f1416] min-h-full  rounded-xl overflow-hidden reveal" data-reveal>
+            <img src="./assests/hd-iphone-wallpaper-8431262_1920.jpg" alt="Project 1" class="w-full h-44  object-cover">
+            <div class="p-5 bg-white text-black">
+              <h3 class="text-xl font-semibold ">Portfolio Website</h3>
+              <p class="text-black/60 mt-2 ">A responsive personal portfolio with animations and project showcase.</p>
+            </div>
+          </article>
+
+          <article class="bg-[#0f1416]   rounded-xl overflow-hidden reveal" data-reveal>
+            <img src="assests/fruits.png" alt="Project 2" class="w-full h-44 object-cover">
+            <div class="p-5 text-black bg-white">
+              <h3 class="text-xl font-semibold">FreshNest Fruits</h3>
+              <p class="text-black/60 mt-2">Modern Fruit shop interface built with Tailwind and vanilla JS.</p>
+            </div>
+          </article>
+
+          <article class="bg-[#0f1416]  rounded-xl overflow-hidden reveal" data-reveal>
+            <img src="./assests/nuts.png" alt="Project 3" class="w-full h-44 object-cover">
+            <div class="p-5 text-black bg-white">
+              <h3 class="text-xl font-semibold">Royal Nuts & Dry Fruits</h3>
+              <p class="text-black/60 mt-2">Modern Nuts and Dry Fruits shop interface built with Tailwind and vanilla JS.</p>
+            </div>
+          </article>
+          
+          
+          <!-- ----add projectss--- copy paste the article block -->
+        </div>
+      </div>
+    </section>
+
+
+<!-- ----review section--- -->
+    <section class="reviews" id="reviews">
+  <h2 class="section-title">Client Reviews</h2>
+  <div class="review-container">
+    <div class="review-card "  id="review-card">
+      <img src="./assests/client1.jpg" alt="Client 1">
+      <h3>John Doe</h3>
+      <p class="role">Web Developer</p>
+      <p class="review-text">"Great service! The project was delivered on time with outstanding quality."</p>
+    </div>
+
+    <div class="review-card" id="review-card">
+      <img src="./assests/client2.jpg" alt="Client 2">
+      <h3>Sarah Smith</h3>
+      <p class="role">Designer</p>
+      <p class="review-text">"Very professional and easy to work with. Highly recommended!"</p>
+    </div>
+
+    <div class="review-card"  id="review-card">
+      <img src="./assests/client3.jpg" alt="Client 3">
+      <h3>Michael Lee</h3>
+      <p class="role">Entrepreneur</p>
+      <p class="review-text">"Creative solutions and top-notch skills. Will hire again for future projects."</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="min-h-[50vh] px-6 md:px-20 flex items-center">
+      <div class="max-w-4xl mx-auto w-full">
+        <h2 class="text-3xl font-bold mb-4">Contact</h2>
+        <p class="text-white/60 mb-6">Want to work together or ask a question? Send a message below.</p>
+
+        <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" id="name" name="name" placeholder="Your name" required class="p-3 rounded-md bg-[#0c0f10] border border-white/5" />
+          <input type="email" id="email" name="email" placeholder="Email address" required class="p-3 rounded-md bg-[#0c0f10] border border-white/5" />
+          <textarea name="message" rows="5" placeholder="Message" required maxlength="550"  class="p-3 rounded-md bg-[#0c0f10] border border-white/5 md:col-span-2 text-justify"></textarea>
+          <button type="submit" class="md:col-span-2 w-fit px-6 py-3 bg-green-500 text-black rounded-full font-semibold hover:bg-green-400">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+  <footer class="py-8 text-center text-white/50">
+    © <span id="year"></span> Vimal — All rights reserved
+  </footer>
+
+  <!-- JS: mobile menu, reveal on scroll, nav active state, contact handler -->
+  <script>
+    // mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', ()=> {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // insert current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll & active nav link update
+    const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+    function setActiveLink() {
+      const fromTop = window.scrollY + 200;
+      navLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute('href'));
+        if (!section) return;
+        if (section.offsetTop <= fromTop && (section.offsetTop + section.offsetHeight) > fromTop) {
+          link.classList.add('nav-link-active');
+        } else {
+          link.classList.remove('nav-link-active');
+        }
+      });
+    }
+    window.addEventListener('scroll', setActiveLink);
+    window.addEventListener('load', setActiveLink);
+
+    // IntersectionObserver reveal
+    const revealElems = document.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('show');
+          io.unobserve(entry.target); // reveal once
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealElems.forEach(el => {
+      // initial classes for transition
+      el.classList.add('reveal');
+      io.observe(el);
+    });
+
+    // Also reveal skill-card-inner items inside skills band
+    document.querySelectorAll('.skill-card-inner').forEach(el => { el.classList.add('reveal'); io.observe(el); });
+
+    // Contact form (demo handler)
+    const form = document.getElementById('contactForm');
+    form?.addEventListener('submit', (e) => {
+      const name=document.getElementById("name").value;
+      e.preventDefault();
+      alert(`Thank you ${name}! your message send successfully.`);
+      form.reset();
+    });
+
+    // Optional: Auto-scroll reviews
+const reviewContainer = document.querySelector('.review-container');
+let scrollAmount = 0;
+
+setInterval(() => {
+  scrollAmount += 320;
+  if (scrollAmount >= reviewContainer.scrollWidth - reviewContainer.clientWidth) {
+    scrollAmount = 0;
+  }
+  reviewContainer.scrollTo({
+    left: scrollAmount,
+    behavior: 'smooth'
+  });
+}, 3000);
+
+  </script>
+</body>
+</html> 
